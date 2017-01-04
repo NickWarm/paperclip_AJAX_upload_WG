@@ -7,11 +7,15 @@
 demo影片：https://youtu.be/xYiZ-b74KaQ
 
 
-# 專案的branchs
-- **master**：臨摹的原始內容
+# 專案的branches
+兩個branch
+- master
+- medium
+
+**master**：臨摹的原始內容
 
 ![](./wiki/img/pika_original.png)
 
-- **medium**：修改懲教恰當的圖片大小
+**medium**：修改成較恰當的圖片大小
 
 ![](./wiki/img/pika_medium.png)
