@@ -174,11 +174,15 @@ and then keep coding `app/views/test/image.html.erb`
 
 實測時發現，沒成功傳出去，回頭研究範例發現我有打錯兩個地方
 
+### 蟲1
+
 ```
 formData.append('image[image]', $input[0].file[0]);
 ```
 
 應該用`files[0]`才對，於是改成`formData.append('image[image]', $input[0].files[0]);`
+
+### 蟲2
 
 ```
 $.ajax({
@@ -260,6 +264,10 @@ end
 
 下面會有個AJAX顯示圖片，要撈`image_url`，一開始時一直失敗撈不到，chrome工具的console說我的`image_url` undefined。後來回去檢查code發現，`api_controller`那邊應該要用symbol `:image_url`，我卻給它寫成`image_url`
 
+```
+render :json => {:status => 'success', image_url => @image.image.url}
+```
+
 so fix `app/controller/api_controller.rb`
 
 ```
@@ -268,9 +276,13 @@ render :json => {:status => 'success', :image_url => @image.image.url}
 
 # 實測
 
+上傳成功的資訊
+
 ![](./img/work_1.png)
 
-成功
+上傳成功的圖片
+
+![](./img/success_ajax_upload.png)
 
 # 加入即時預覽
 
