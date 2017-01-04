@@ -345,3 +345,7 @@ and then keep coding
   $('#preview').attr('src', result.image_url)
 });
 ```
+
+圖片成功ajax出來
+
+![](./img/pika_original.png)
