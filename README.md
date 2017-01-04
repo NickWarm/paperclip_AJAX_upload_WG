@@ -4,7 +4,7 @@
 
 `wiki`資料夾下有最初筆記，[GitHub wiki]()頁面也有一份，方便以後查找資料
 
-demo影片：
+demo影片：https://youtu.be/xYiZ-b74KaQ
 
 
 # 專案的branchs
