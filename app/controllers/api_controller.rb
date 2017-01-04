@@ -3,7 +3,7 @@ class ApiController < ApplicationController
     @image = Image.create(img_params)
 
     if @image
-      render :json => {:status => 'success', :image_url => @image.image.url}
+      render :json => {:status => 'success', :image_url => @image.image.url(:medium)}
     else
       render :json => {:status => 'fail'}
     end
