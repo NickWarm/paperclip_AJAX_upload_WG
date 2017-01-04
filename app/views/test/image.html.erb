@@ -1,0 +1,22 @@
+<%= file_field_tag :image %>
+<img id='preview' src="#">
+
+<script>
+  $('#image').change(function(){
+    var formData = new FormData(),
+        $input = $(this);
+    formData.append('image[image]', $input[0].files[0]);
+
+    $.ajax({
+      url: '<%= image_upload_path %>',
+      data: formData,
+      type: 'PUT',
+      cache:false,
+      contentType: false,
+      processData: false
+    }).done(function(result){
+        console.log(result.image_url);
+        $('#preview').attr('src', result.image_url );
+    });
+  })
+</script>
