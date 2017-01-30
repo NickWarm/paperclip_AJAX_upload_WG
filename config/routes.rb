@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'api/image_upload'
+  # get 'api/image_upload'
 
-  get 'test/image'
+  # get 'test/image'
 
   # View
   get '/image' => 'test#image'

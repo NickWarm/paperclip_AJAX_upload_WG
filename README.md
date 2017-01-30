@@ -4,7 +4,9 @@
 
 `wiki`資料夾下有最初筆記，[GitHub wiki](https://github.com/NickWarm/paperclip_AJAX_upload_WG/wiki)頁面也有一份，方便以後查找資料
 
-demo影片：https://youtu.be/xYiZ-b74KaQ
+demo影片：
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xYiZ-b74KaQ" frameborder="0" allowfullscreen></iframe>
 
 
 # 專案的branches
